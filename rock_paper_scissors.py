@@ -34,8 +34,17 @@ def rock_paper_scissors_game():
 		times += 1
 	print('========================================================================\nGAME OVER\n========================================================================')
 	if score_player1 == score_player2:
-		print("\nI'm so sorry, you are losers")
+		print('========================================================================\nGAME OVER\n========================================================================')
+		print("\nI'm so sorry, you are losers\n")
 	elif score_player1 > score_player2:
-		print('\n Player 1 you are the best')
+		print('========================================================================\nPlayer 1 you are the best\n========================================================================')		
 	else:	
-		print('\n Player 2 you are the best')
+		print('========================================================================\nPlayer 2 you are the best\n========================================================================')
+		
+
+	selection = int(input("Would you like to play again? \n1.Yes \n2.No: "))
+	
+	if selection == 1:
+		rock_paper_scissors_game()
+	if selection == 2:
+		print("See you later")
